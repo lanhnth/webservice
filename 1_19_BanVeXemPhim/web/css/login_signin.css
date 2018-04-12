@@ -1,0 +1,160 @@
+body {
+	background: #FDFCF0;
+}
+.lc-form {
+	width: 980px;
+	margin: 0 auto;
+}
+.lc-form-main {
+	padding: 17px 40px;
+}
+.nav-tabs > li >a {
+	background: none repeat scroll 0 0 #898987;
+    border-radius: 5px 5px 0 0;
+    border: none;
+    margin-right: 2px;
+    position: relative;
+    top: 0px;
+    text-transform: uppercase;
+    color: #fff !important;
+    font-size: 15px;
+    height: 100%;
+}
+.nav-tabs > li:hover > a {
+	background: none repeat scroll 0 0 #898987;
+	border: none;
+}
+.nav-tabs > li.active > a {
+	background-color: #e71a0f!important;
+    white-space: nowrap;
+    border: none;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+	border: none;
+}
+.lc-form-login-main {
+	padding: 20px 0;
+	margin-bottom: 50px;
+}
+.lc-form-login-content {
+	padding: 35px 0 70px 80px;
+}
+.lc-login-title {
+	font-family: Verdana,Arial,sans-serif;
+    font-size: 13px;
+    width: 100%;
+    margin-top: 40px;
+    font-style: italic;
+}
+.lc-form-input-email .input-box input{
+	background: url(../img/sprite_icon.png) no-repeat scroll 12px -232px rgba(0, 0, 0, 0);
+}
+.lc-form-input-pass .input-box input{
+	background: url(../img/sprite_icon.png) no-repeat scroll 12px -261px rgba(0, 0, 0, 0);
+}
+.lc-login-content {
+	margin: 10px 0;
+}
+.lc-form-list li input {
+	border: 2px solid #b5b5b5;
+    color: #666;
+    display: block;
+    font-size: 12px;
+    height: 35px;
+    line-height: 33px;
+    padding: 0 5px 0 40px;
+    width: 240px;
+}
+.lc-form-list li {
+	margin-bottom: 20px;
+}
+.lc-form-list {
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+/* ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+} */
+.lc-form-button > button > span {
+	border: 1px solid #f07469;
+    color: #f2f0e5;
+    display: inline-block;
+    height: 80px;
+    line-height: 60px;
+    min-width: 86px;
+    padding: 5px 10px;
+}
+button > span {
+	font-weight: bold;
+}
+.lc-form-button > button > span > span {
+	color: #fff;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.lc-form-button {
+	clear: none;
+    float: left;
+    margin-left: 40px;
+    padding-top: 0;
+}
+.lc-form-button button {
+	background-color: #e71a0f;
+	border: none;
+	padding: 2px;
+}
+.lc-form-signin-form {
+    padding: 20px;
+}
+.lc-form-signin-form .input-sign {
+    border: 2px solid #b5b5b5;
+    color: #666;
+    display: block;
+    font-size: 12px;
+    height: 35px;
+    line-height: 33px;
+    padding: 0 5px 0 10px;
+    width: 100%;
+    border-radius: 1px;
+}
+.lc-form-signin-form label {
+    display: inline-block;
+    font-size: 13px;
+    font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+    font-weight: 600;
+    width: 100%;
+    color: #636363;
+    margin-bottom: 3px;
+}
+.important {
+    color: red;
+    font-size: 9px;
+}
+.lc-form-signin-form button > span{
+    border: 1px solid #f07469;
+    font-weight: bold;
+    padding: 5px;
+}
+.lc-form-signin-form button {
+    background: #e71a0f;
+    display: inline-block;
+    padding: 6px 2px;
+    border: 0;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: normal;
+    font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.lc-form-signin-form button:hover,.lc-form-signin-form button:active,.lc-form-signin-form button:focus {
+    background: #e71a0f;
+    color: #FFFFFF;
+}

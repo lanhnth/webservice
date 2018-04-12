@@ -1,0 +1,131 @@
+.breadcrumbs {
+	background-color: #f1f0e5;
+	border-bottom: 1px solid #cacac0;
+	padding-left: 14%;
+	width: 100%;
+	margin: 0;
+}
+.page-title {
+	border-bottom: 2px solid #222;
+	margin-top: 20px;
+	padding-bottom: 10px;
+}
+.main {
+	padding: 0 14%;
+}
+.product-name-responsive {
+	display: none;
+}
+
+
+	.product-detail {
+		margin-top: 20px;
+		padding-left: 15px;
+		width: 80%;
+		float: left;
+	}
+	.product-detail > div {
+		width: 100%;
+		float: left;
+	}
+	.product-detail > div label {
+		float: left;
+		width: 13%;
+	}
+	.product-detail > div > div {
+		padding-left: 10px;
+		width: 87%;
+	}
+	.product-name {
+		border-bottom: 1px solid #d9d6c8;
+	}
+	.product-img {
+		margin-top: 20px;
+		width: 20%;
+		float: left;
+	}
+
+.like-fb-booking {
+	margin-bottom: 15px;
+}
+
+.trailer {
+	padding-top: 10px;
+}
+
+.lc-main-showtimes-title {
+    margin-top: 75px;
+}
+
+.nav-showtimes {
+    width: 25%;
+    margin: 10px auto;
+
+}
+.nav-showtimes .active .showtime-select-one:before {
+    background: url(../img/bg-icon-finger.png) no-repeat scroll 5px 50% #e71a0f;
+    content: "";
+    height: 40px;
+    padding-left: 40px;
+}
+.nav-tabs.nav-showtimes>li>a {
+    color: #fff!important;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: transparent; 
+    border: none;
+    border-bottom-color: transparent;
+    border-radius: 0;
+}
+.nav-tabs.nav-showtimes>li {
+    background-color: #e71a0f;
+}
+.nav-tabs.nav-showtimes>li:first-child a:after{
+    border-right: 1px solid #f2f2f2;
+    position: absolute;
+    top: 10px;
+    content: '';
+    width: 14px;
+    height: 50%;
+} 
+.nav-tabs.nav-showtimes>li:first-child:before{
+    background: url(../img/ribon_left_menu.gif) no-repeat scroll transparent;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -19px;
+    width: 59px;
+    height: 37px;
+}   
+.nav-tabs.nav-showtimes>li:last-child:before {
+    background: url(../img/ribon_right.gif) no-repeat scroll transparent;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -59px;
+    width: 59px;
+    height: 37px;
+}
+.nav-tabs.nav-showtimes>li.active>a:hover,.nav-tabs.nav-showtimes>li.active>a:focus {
+    background-color: transparent; 
+    border: none;
+    border-bottom-color: transparent;
+    border-radius: 0;
+}
+.btn-mua span {
+	background: url(../img/bg-btn-mua.png);
+    background-repeat: no-repeat;
+    padding: 3px 2px 3px 28px;
+    border: 1px solid white;
+    border-radius: 4px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+.btn-mua {
+	background: #e71a0f;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 2px;
+}

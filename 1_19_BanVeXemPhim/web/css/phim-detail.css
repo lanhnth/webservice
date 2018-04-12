@@ -1,0 +1,217 @@
+.main-container{
+	margin: 0 auto;
+	background-color: #FDFCF0;
+}
+.main {
+	width: 980px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.main .container{
+	width: 980px;
+    margin: 0 auto;
+}
+.breadcrumbs {
+    background-color: #f1f0e5;
+    border-bottom: 1px solid #cacac0;
+    padding: 5px 0;
+    margin: 0;
+    width: 100%;
+    height: 30px;
+}
+.breadcrumbs ul{
+	list-style: none;
+	margin: 0px auto;
+    width: 980px;
+    float: none;
+}
+.breadcrumbs li {
+    float: left;
+    font-size: 12px;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+.product-tittle{
+    border-bottom: 2px solid #222;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.product-view h2{
+	font-size: 24px;
+}
+.moive-name{
+    border-bottom: 1px solid #d9d6c8;
+    margin-bottom: 10px;
+    width: 100%;
+    padding-bottom: 15px;
+}
+.moive-info{
+    margin-bottom: 10px;
+}
+.moive-info label {
+	float: left;
+    font-size: 13px;
+    font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+    font-weight: 600;
+    margin-bottom: 0px !important;
+}
+.moive-info-content{
+	font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+    color: #222;
+    font-size: 14px;
+    /*line-height: 18px;*/
+}
+.moive-icon{
+	margin-top: 7px;
+	height: 45px;
+}
+.moive-icon span{
+	float: left;
+	display: block;
+	font-size: 0;
+	height: 45px;
+    width: 68px;
+	background-image: url(../img/movie-icon.png);
+}
+span.moive-rating.p{
+    background-position: -711px 0px;
+}
+span.moive-type.type-2d{
+    background-position: -569px 0px;
+}
+span.moive-type.type-3d{
+    background-position: -224px 0px;
+}
+
+.movie-detail-fb-booking {
+    float: left;
+    margin-bottom: 10px;
+}
+/*nút mua*/
+
+.moive-detail-fb-booking button{
+	height: 30px;
+	display: block;
+
+}
+
+.btn-mua span {
+    background: url(../img/bg-btn-mua.png);
+    background-repeat: no-repeat;
+    padding: 3px 2px 3px 28px;
+    border: 1px solid white;
+    border-radius: 4px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+.btn-mua {
+	background: #e71a0f;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 2px;
+}
+
+.btn-booking{
+	background: none no-repeat scroll 0 0 #e71a0f;
+    border-radius: 5px
+}
+button{
+	display: inline-block;
+    padding: 2px 2px;
+    border: 0;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: normal;
+    font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+    line-height: 19px;
+    text-align: center;
+}
+.btn-booking span{
+	padding-left: 25px;
+    background-image: url(../img/bg-cate-booking.png);
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    line-height: 20px;
+}
+.btn-booking{
+   font-weight: bold;
+}
+.fb-like {
+	float: left;
+	padding-right: 10px;
+}
+.button span{
+	float: right;
+	border: 1px solid #f07469;
+    font-weight: bold;
+    padding: 2px;
+	padding-left: 25px;
+}
+.product-content{
+	margin-top: 15px;
+}
+.product-content .nav-tabs>li {
+    display: inline-block;
+    clear: left;
+    float: none;
+    background-color: #e71a0f;
+}
+.nav-tabs> li span{
+	color: #fff;
+}
+.nav-tabs>li.active>a:hover {
+    background-color: #e71a0f;
+}
+.nav-tabs>li>a {
+	margin-right: 0px;
+    border-radius: 0px 0px 0 0;
+    border: none; 
+    background-color: #e71a0f;
+}
+.nav-tabs>li>a:hover {
+    border-color: #e71a0f;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    background-color: #e71a0f;
+    border: none;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: #e71a0f;
+}
+.nav-tabs> li:first-child {
+    background: url(../img/bg-ribon-left-transparent.png) no-repeat scroll left top transparent;
+    padding-left: 19px;
+    margin-right: -12px;
+    /*background-color: none;*/
+}
+.nav-tabs> li:first-child>a> span{
+	padding-right: 15px;
+	border-right: 1px solid white;
+}
+.nav-tabs> li.last {
+    background: url(../img/bg-ribon-right-transparent.png) no-repeat scroll right top transparent;
+    padding-right: 19px;
+    /*background-color: none;*/
+}
+.nav-tabs li{
+	padding: 0px;
+	margin: 0px;
+}
+.nav-tabs {
+    text-align: center;
+    border-bottom: none;
+	margin-bottom: 20px
+}
+.nav-tabs>li>a >span >img{
+	display: none;
+	padding-right: 10px;
+}
+.nav-tabs>li.active>a > span >img {
+	display: inline-block;
+}
+#footer{
+	margin-top: 20px;
+}

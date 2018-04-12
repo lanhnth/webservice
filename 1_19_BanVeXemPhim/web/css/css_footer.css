@@ -1,0 +1,32 @@
+footer {
+	
+	color: #636363;
+}
+
+.footer-policy, .footer-address {
+	border-top: 2px solid #222;
+	margin-top: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.one-col h5 {
+	font-weight: bold;
+	font-size: 15px;
+
+}
+
+.one-col ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.end-footer {
+	background: url(../img/bg-bottom-footer.jpg) repeat-x;
+	height: 100px;
+}
+
+.icon-social li{
+	float: left;
+}
