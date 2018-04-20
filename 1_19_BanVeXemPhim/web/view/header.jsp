@@ -17,12 +17,19 @@
     String loginout = "Đăng Nhập";
     String link2 = "home?controller=login_signin";
     if (client != null) {
-        dn = client.getUsername();
+        dn = client.getName();
         link = "home?controller=member_account";
         loginout = "LOG OUT";
         link2 = "LogoutServlet";
     }
 %>
+<script>
+    
+    function signOut() {
+        console.log("Asd");
+        document.location.href = "https://www.google.com/accounts/Logout?continue=https://appengine.google.com/_ah/logout?continue=http://localhost:8080<%=request.getContextPath()%>/LogoutServlet";
+    }
+</script>
 <div class="header">
     <div class="Quangcao">
         <a href="home" target="_blank">
@@ -32,7 +39,9 @@
     <div class="menu">
         <ul>
             <li><a href=<%=link%>><%=dn%></a></li>
-            <li><a href=<%=link2%>><%=loginout%></a></li>
+            <li><a onclick="<% if (client != null) {
+                    out.print("signOut();");
+            }%>"  href="<% if(client == null){ out.print(link2);}else{out.print("javascript:");} %>" ><%=loginout%></a></li>
             <li><a href="#" id="lienhe">Liên Hệ</a></li>
             <li><a href="#" id="tuyendung">Tuyển Dụng</a></li>
         </ul>

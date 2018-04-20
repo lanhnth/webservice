@@ -21,7 +21,7 @@ public class DBConnection {
     static Connection con;
     static String url;
     static String username = "root";
-    static String password = "root";
+    static String password = "coi123457";
 
     public static Connection getConnection() {
         if (con != null) {

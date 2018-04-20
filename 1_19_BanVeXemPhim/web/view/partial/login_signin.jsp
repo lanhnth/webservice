@@ -4,8 +4,8 @@
     Author     : ducvu
 --%>
 
+<%@page import="model.Client"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-
 <link rel="stylesheet" type="text/css" href="css/login_signin.css">
 <style>
     .lc-login-t {
@@ -15,8 +15,54 @@
         font-style: italic;
     }
 </style>
-
 <div class="main-container">
+    <script>
+        var ggapi;
+        window.fbAsyncInit = function () {
+            FB.Event.subscribe('auth.authResponseChange', function (response)
+            {
+                if (response.status === 'connected')
+                {
+
+                    FB.api('/me', 'GET', {fields: 'name, email'}, function (response) {
+                        login(response.email, response.name);
+                    });
+
+
+                }
+            });
+        }
+        function onSignIn(googleUser) {
+            var profile = googleUser.getBasicProfile();
+            login(profile.getEmail(), profile.getName());
+        }
+//        function signOut() {
+//            console.log("OK");
+//            gapi.load('auth2', function () {
+//                var test = gapi.auth2.GoogleAuth;
+//                test.signOut()..then(function () {
+//                    console.log('User signed out.');
+//                });
+//                console.log(test.signOut());
+//            });
+
+//        }
+        function login(email, name) {
+            jQuery.ajax({
+                type: "post",
+                url: '<%=request.getContextPath()%>/loginfb?isAjax=true',
+                data: {
+                    email: email,
+                    name: name
+                },
+                success: function (result) {
+                    $(location).attr('href', 'home?controller=home');
+                }
+            });
+        }
+
+
+    </script>
     <div class="lc-form">
         <div class="lc-form-main">
             <div class="lc-form-main-content">
@@ -45,7 +91,7 @@
                                     <div class="alert alert-danger" role="alert">
                                         Username or Password incorrect!
                                     </div>
-                                    <%} %>
+                                    <%}%>
                                     <p class="lc-login-title">Vui lòng nhập tên người dùng (email) và mật khẩu của bạn...</p>
                                     <p class="lc-login-t">Account Demo( Username: demo_d3m0 | Password: demo_d3m0)</p>
 
@@ -69,6 +115,13 @@
                                                         <span>Đăng nhập</span>
                                                     </span>
                                                 </button>
+                                            </div>
+
+                                            <div style="margin-left: 20px; float:left">
+                                                <p>Social Login</p>
+                                                <div class="fb-login-button" scope="public_profile,email" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div>
+                                                <br>
+                                                <div class="g-signin2" data-onsuccess="onSignIn" style="margin-top: 15px;"></div>
                                             </div>
                                         </form>
                                     </div>
@@ -136,6 +189,7 @@
         </div>
     </div>
 </div>
+
 
 <script type="text/javascript" >
     function checkform_signin() {

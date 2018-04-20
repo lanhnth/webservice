@@ -30,13 +30,16 @@
                 return;
             js = d.createElement(s);
             js.id = id;
-            js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.11&appId=771865882913118';
+            js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.12&appId=1893824457562272&autoLogAppEvents=1';
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
+    <meta name="google-signin-client_id" content="345562483695-vngce1529gifcc2cka70eqagqove3orl.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
 </head>
 <body>
     <!--day la trong index-->
     <jsp:include page='view/header.jsp' />
+    
     <%
         try {
             if (request.getParameter("controller") != null) {

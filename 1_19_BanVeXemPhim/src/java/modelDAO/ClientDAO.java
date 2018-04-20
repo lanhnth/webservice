@@ -15,4 +15,7 @@ public interface ClientDAO {
     public void signin(Client client);
     public Client checkLoginClient(Client client);
     public void changePassClient(Client client, String pass);
+    public Client socialLogin(String email, String name);
+    public void changeProfile(Client client);
+    public Client getClient(int id);
 }

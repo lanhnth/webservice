@@ -68,6 +68,14 @@
         <servlet-name>OrderServlet</servlet-name>
         <servlet-class>servlet.OrderServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>loginfb</servlet-name>
+        <servlet-class>servlet.SocialLoginFB</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ChangeProfile</servlet-name>
+        <servlet-class>servlet.ChangeProfile</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>SigninServlet</servlet-name>
         <url-pattern>/SigninServlet</url-pattern>
@@ -135,6 +143,14 @@
     <servlet-mapping>
         <servlet-name>OrderServlet</servlet-name>
         <url-pattern>/OrderServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>loginfb</servlet-name>
+        <url-pattern>/loginfb</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ChangeProfile</servlet-name>
+        <url-pattern>/ChangeProfile</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
