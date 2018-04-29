@@ -45,8 +45,11 @@ public class CinemaDAOImpl implements CinemaDAO{
             while(rs.next()){
                 Cinema cinema = new Cinema(
                         rs.getInt("id"), 
-                        rs.getString("name"), 
-                        rs.getString("address"));
+                        rs.getString("address"), 
+                        rs.getString("name"),
+                        rs.getDouble("id_x"),
+                        rs.getDouble("id_y"));
+                
                 result.add(cinema);
             }
         } catch (SQLException ex) {

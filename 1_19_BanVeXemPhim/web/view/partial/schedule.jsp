@@ -61,7 +61,7 @@
                                 </div>
                                 <div class="carousel-caption-right">
                                     <ul class="carousel-caption-right-nav">
-                                        <li><a href="#" class="btn-carousel">XEM BẢN ĐỒ</a></li>
+                                        <li><a href="home?controller=contact#map" class="btn-carousel">XEM BẢN ĐỒ</a></li>
                                         <li><a href="#" class="btn-carousel">LIÊN HỆ CGV</a></li>
                                     </ul>
                                 </div>

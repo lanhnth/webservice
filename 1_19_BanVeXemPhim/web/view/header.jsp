@@ -14,6 +14,7 @@
     Client client = (Client) session.getAttribute("user");
     String dn = "Đăng Ký";
     String link = "home?controller=login_signin";
+    String contact_link = "home?controller=contact";
     String loginout = "Đăng Nhập";
     String link2 = "home?controller=login_signin";
     if (client != null) {
@@ -33,7 +34,7 @@
         <ul>
             <li><a href=<%=link%>><%=dn%></a></li>
             <li><a href=<%=link2%>><%=loginout%></a></li>
-            <li><a href="#" id="lienhe">Liên Hệ</a></li>
+            <li><a href=<%=contact_link%> id="lienhe">Liên Hệ</a></li>
             <li><a href="#" id="tuyendung">Tuyển Dụng</a></li>
         </ul>
     </div>
